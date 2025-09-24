@@ -1,0 +1,7 @@
+# requirements.txt
+nltk
+pandas
+scikit-learn
+numpy
+joblib
+Flask
