@@ -4,9 +4,13 @@ It's purpose is to provide a simple interface for IT service desk workers to fin
 The results can then be used for pattern analysis of recurrent issues, or to find solutions to known problems.   
 
 ## Technical
-The app works by taking a historical record of incident ticket data from a service desk in a CSV format and trains a Term Frequency-Inverse Document Frequency (TF-IDF) vectorizer on the corpus.  
-The TF-IDF vectorizer is then used to calculate the similarity score of any given incident description across the entire corpus within a fraction of second.  
-The similarty scores are ranked, and only the data that is deemed relevant to the current description is provided to the user.  
+This is a slightly more in-depth step-by-step of whats going on behind the scenes.
+
+1. The app takes a historical record of incident ticket data from a service desk in a CSV format and trains a Term Frequency-Inverse Document Frequency (TF-IDF) vectorizer on the corpus.  
+
+2. The TF-IDF vectorizer is used to calculate the similarity score of any given incident description across the entire corpus within a fraction of second.  
+
+3. The similarty scores are ranked, and only the data that is deemed relevant to the current description is provided to the user.  
 
 ## Build
 ### Requirements
